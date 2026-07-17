@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Courses Directory | CareerMVP</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+body{
+
+    margin:0;
+
+    background:
+    linear-gradient(rgba(0,0,0,.65),
+    rgba(0,0,0,.65)),
+    url("images/courses.jpg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    min-height:100vh;
+}
+
+/* Main Content */
+
+.container{
+
+    width:90%;
+    max-width:900px;
+
+    margin:140px auto 50px;
+
+    text-align:center;
+
+    color:#fff;
+}
+
+.container h1{
+
+    font-size:55px;
+
+    margin-bottom:40px;
+}
+
+/* Course Buttons */
+
+.course-links{
+
+    list-style:none;
+
+    padding:0;
+}
+
+.course-links li{
+
+    margin:25px 0;
+}
+
+.course-links a{
+
+    display:block;
+
+    max-width:400px;
+
+    margin:auto;
+
+    padding:18px;
+
+    background:#0055ff;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:12px;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    transition:.3s;
+}
+
+.course-links a:hover{
+
+    background:#003ecc;
+
+    transform:translateY(-5px);
+}
+
+/* Back Button */
+
+.page-header{
+
+    width:90%;
+
+    margin:90px auto 0;
+}
+
+.back-btn{
+
+    background:#0055ff;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 20px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    font-size:16px;
+}
+
+.back-btn:hover{
+
+    background:#003ecc;
+}
+
+@media(max-width:768px){
+
+.container{
+
+    margin-top:120px;
+}
+
+.container h1{
+
+    font-size:36px;
+}
+
+.course-links a{
+
+    width:100%;
+
+    font-size:18px;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+
+CareerMVP
+
+</div>
+
+<div class="menu-toggle" id="menuToggle">
+
+☰
+
+</div>
+
+<ul class="nav-links" id="navLinks">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="careers.html">Careers</a></li>
+
+<li><a href="courses.html">Courses</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+<li id="authNav"></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<!-- BACK BUTTON -->
+
+<div class="page-header">
+
+<button class="back-btn" onclick="history.back()">
+
+← Back
+
+</button>
+
+</div>
+
+<!-- CONTENT -->
+
+<div class="container">
+
+<h1>Courses Directory</h1>
+
+<ul class="course-links">
+
+<li>
+
+<a href="courses/after10th.html">
+
+Courses After 10th
+
+</a>
+
+</li>
+
+<li>
+
+<a href="courses/after12th.html">
+
+Courses After 12th
+
+</a>
+
+</li>
+
+<li>
+
+<a href="courses/afterdegree.html">
+
+Courses After Degree
+
+</a>
+
+</li>
+
+</ul>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

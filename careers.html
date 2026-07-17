@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Career Guidance</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="career-page">
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+CareerGuide
+</div>
+
+<!-- Toggle Button -->
+
+<div class="menu-toggle" id="menuToggle">
+☰
+</div>
+
+<!-- Navigation -->
+
+<ul class="nav-links" id="navLinks">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a href="about.html">About</a></li>
+
+<li><a href="courses.html">Courses</a></li>
+
+<li><a href="careers.html">Careers</a></li>
+
+<li><a href="contact.html">Contact</a></li>
+
+<li id="authNav"></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<!-- Back Button -->
+
+<div class="page-header">
+
+<button class="back-btn" onclick="history.back()">
+
+← Back
+
+</button>
+
+</div>
+
+<!-- ================= HERO ================= -->
+
+<section class="career-hero">
+
+<div class="career-overlay">
+
+<h1>Find Your Dream Career</h1>
+
+<p>
+Explore career paths based on your interests and educational background.
+</p>
+
+</div>
+
+</section>
+
+<!-- ================= FORM ================= -->
+
+<div class="career-box">
+
+<h2>Career Finder</h2>
+
+<select id="stream">
+
+<option value="MPC">MPC</option>
+
+<option value="BiPC">BiPC</option>
+
+<option value="Commerce">Commerce</option>
+
+</select>
+
+<select id="interest">
+
+<option value="Technology">Technology</option>
+
+<option value="Biology">Biology</option>
+
+<option value="Business">Business</option>
+
+</select>
+
+<select id="degree">
+
+<option value="BTech">BTech</option>
+
+<option value="BCom">BCom</option>
+
+<option value="BA">BA</option>
+
+</select>
+
+<button onclick="getResult()">
+
+Get Result
+
+</button>
+
+</div>
+
+<!-- ================= RESULT ================= -->
+
+<div class="result-box">
+
+<h3>Roadmap</h3>
+
+<p id="roadmap"></p>
+
+<h3>Careers</h3>
+
+<ul id="careers"></ul>
+
+<h3>Eligibility</h3>
+
+<ul id="eligibility"></ul>
+
+</div>
+
+<!-- ================= SUPPORT LINKS ================= -->
+
+<section class="support-links">
+
+<h2>Supporting Career Links</h2>
+
+<div class="link-category">
+
+<h3>Technology</h3>
+
+<a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a>
+
+<a href="https://www.w3schools.com" target="_blank">W3Schools</a>
+
+<a href="https://www.geeksforgeeks.org" target="_blank">GeeksforGeeks</a>
+
+<a href="https://www.coursera.org" target="_blank">Coursera</a>
+
+<a href="https://www.udemy.com" target="_blank">Udemy</a>
+
+</div>
+
+<div class="link-category">
+
+<h3>Medical</h3>
+
+<a href="https://www.nmc.org.in" target="_blank">National Medical Commission</a>
+
+<a href="https://neet.nta.nic.in" target="_blank">NEET Official Website</a>
+
+<a href="https://www.aiims.edu" target="_blank">AIIMS</a>
+
+</div>
+
+<div class="link-category">
+
+<h3>Business</h3>
+
+<a href="https://www.investopedia.com" target="_blank">Investopedia</a>
+
+<a href="https://www.coursera.org/business" target="_blank">Coursera Business</a>
+
+<a href="https://www.udemy.com/topic/business" target="_blank">Udemy Business</a>
+
+</div>
+
+</section>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

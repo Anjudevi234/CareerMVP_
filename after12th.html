@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Courses After 12th</title>
+
+<link rel="stylesheet" href="../style.css">
+
+<style>
+
+body{
+    background:#f5f5f5;
+}
+
+/* HERO SECTION */
+
+.hero{
+    width:100%;
+    height:90vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url('../images/after12th.jpg');
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.hero-overlay{
+    color:white;
+    max-width:900px;
+}
+
+.hero-overlay h1{
+    font-size:65px;
+    margin-bottom:20px;
+}
+
+.hero-overlay p{
+    font-size:24px;
+    line-height:1.6;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:15px 35px;
+    background:#0055ff;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+    font-size:18px;
+}
+
+/* COURSES SECTION */
+
+.streams{
+    padding:80px 8%;
+}
+
+.streams h2{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:50px;
+}
+
+.card-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.career-card{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 5px 20px rgba(0,0,0,0.1);
+    transition:0.4s;
+    text-align:center;
+}
+
+.career-card:hover{
+    transform:translateY(-10px);
+}
+
+.career-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.career-card h3{
+    padding:20px 20px 10px;
+    font-size:24px;
+}
+
+.career-card p{
+    padding:0 20px 20px;
+    line-height:1.6;
+}
+
+.card-btn{
+    display:inline-block;
+    margin-bottom:20px;
+    padding:10px 20px;
+    background:#0055ff;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+}
+
+/* RESOURCES */
+
+.resources{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+    margin-bottom:60px;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.resources h2{
+    color:#0055ff;
+    margin-bottom:20px;
+}
+
+.resources ul{
+    padding-left:20px;
+}
+
+.resources li{
+    margin-bottom:12px;
+}
+
+.resources a{
+    text-decoration:none;
+    color:#0055ff;
+}
+
+</style>
+
+</head>
+<body>
+
+   <!-- HEADER -->
+
+<header>
+
+<nav class="navbar">
+
+<div class="logo">
+CareerMVP
+</div>
+
+<!-- Mobile Toggle -->
+
+<div class="menu-toggle" id="menuToggle">
+☰
+</div>
+
+<ul class="nav-links" id="navLinks">
+
+<li><a href="../index.html">Home</a></li>
+
+<li><a href="../about.html">About</a></li>
+
+<li><a href="../careers.html">Careers</a></li>
+
+<li><a href="../courses.html">Courses</a></li>
+
+<li><a href="../contact.html">Contact</a></li>
+
+<li id="authNav"></li>
+
+</ul>
+
+</nav>
+
+</header>
+
+<!-- BACK BUTTON -->
+
+<div class="page-header">
+
+<button class="back-btn" onclick="history.back()">
+
+← Back
+
+</button>
+
+</div>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<div class="hero-overlay">
+
+<h1>Courses After 12th</h1>
+
+<p>
+Discover professional degree programs and career-oriented courses
+after completing Higher Secondary Education.
+</p>
+
+<a href="#streams" class="btn">
+Explore Courses
+</a>
+
+</div>
+
+</section>
+
+<!-- COURSES -->
+
+<section class="streams" id="streams">
+
+<h2>Popular Options After 12th</h2>
+
+<div class="card-container">
+
+<!-- BTECH -->
+
+<div class="career-card">
+
+<img src="../images/btech.jpg" alt="BTech">
+
+<h3>B.Tech</h3>
+
+<p>
+Engineering degree offering specializations in Computer Science,
+Mechanical, Civil, Electrical and more.
+</p>
+
+<a href="btech.html" class="card-btn">
+Explore
+</a>
+
+</div>
+
+<!-- MBBS -->
+
+<div class="career-card">
+
+<img src="../images/mbbs.jpg" alt="MBBS">
+
+<h3>MBBS</h3>
+
+<p>
+Professional medical degree for students aspiring to become doctors
+and healthcare professionals.
+</p>
+
+<a href="mbbs.html" class="card-btn">
+Explore
+</a>
+
+</div>
+
+<!-- BCA -->
+
+<div class="career-card">
+
+<img src="../images/bca.jpg" alt="BCA">
+
+<h3>BCA</h3>
+
+<p>
+Bachelor of Computer Applications focused on software development,
+programming and IT careers.
+</p>
+
+<a href="bca.html" class="card-btn">
+Explore
+</a>
+
+</div>
+
+<!-- BCOM -->
+
+<div class="career-card">
+
+<img src="../images/bcom.jpg" alt="BCom">
+
+<h3>B.Com</h3>
+
+<p>
+Commerce degree covering accounting, taxation, banking,
+finance and business management.
+</p>
+
+<a href="bcom.html" class="card-btn">
+Explore
+</a>
+
+</div>
+
+<!-- BSC -->
+
+<div class="career-card">
+
+<img src="../images/bsc.jpg" alt="BSc">
+
+<h3>B.Sc</h3>
+
+<p>
+Science degree in Physics, Chemistry, Mathematics,
+Biology and Computer Science.
+</p>
+
+<a href="bsc.html" class="card-btn">
+Explore
+</a>
+
+</div>
+
+<!-- BBA -->
+
+<div class="career-card">
+
+<img src="../images/bba.jpg" alt="BBA">
+
+<h3>BBA</h3>
+
+<p>
+Bachelor of Business Administration focused on Management,
+Marketing, Finance, Human Resources and Entrepreneurship.
+</p>
+
+<a href="bba.html" class="card-btn">
+Explore
+</a>
+
+</div>
+
+<!-- BA -->
+
+<div class="career-card">
+
+<img src="../images/ba.jpg" alt="BA">
+
+<h3>B.A</h3>
+
+<p>
+Arts and Humanities degree covering History, Economics,
+Political Science, Languages and more.
+</p>
+
+<a href="ba.html" class="card-btn">
+Explore
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- RESOURCES -->
+
+<div class="resources">
+
+<h2>Reference Links</h2>
+
+<ul>
+
+<li>
+<a href="https://www.ugc.gov.in" target="_blank">
+University Grants Commission (UGC)
+</a>
+</li>
+
+<li>
+<a href="https://www.aicte-india.org" target="_blank">
+AICTE
+</a>
+</li>
+
+<li>
+<a href="https://www.careers360.com" target="_blank">
+Careers360
+</a>
+</li>
+
+<li>
+<a href="https://www.shiksha.com" target="_blank">
+Shiksha
+</a>
+</li>
+
+<li>
+<a href="https://www.ncs.gov.in" target="_blank">
+National Career Service
+</a>
+</li>
+
+</ul>
+
+</div>
+<script src="../script.js"></script>
+</body>
+</html>
